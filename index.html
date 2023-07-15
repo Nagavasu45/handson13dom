@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./two.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <div>
+    <h1 id="text">Q1.	Write the code to access element which is having id as "text"</h1>
+    <pre>javascript implementation;
+        var res =document.getElementById("text").textContent;
+
+        
+    </pre>
+    <h2 id="text1">
+
+    </h2>
+</div>
+<div>
+    <h1>Q2.	Write the code to access element which is having tag as "h1"</h1>
+    <pre>javascript implementation;
+        var res =document.getElementsByTagName("h1").textContent;
+    </pre>
+    
+</div>
+<div>
+    <h1 class="box">Q3.	Write the code to access element which is having class as "box"</h1>
+    <pre>javascript implementation;
+        var res =document.getElementsByClassName("box").textContent;
+    </pre>
+    
+</div>
+<div>
+    <h2 >Q4.	"h1 open tag Hello h1 closing tag
+
+    Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</h2>
+    <pre>javascript implementation;
+        document.getElementsByTagName("h1").innerHTML="Hello world";
+    </pre>
+    
+</div>
+<div>
+    <h1 id="test1">
+        helloworld
+    </h1>
+    <button type="submit" onclick="callreplaced()">replaced</button>
+</div>
+<div>
+    <h2 >Q6.	" h1 Hello /h1
+
+    Add one style attribute and give text color as red and id a
+    ttribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</h2>
+    <h1 class="test2">hello</h1>
+    <pre>
+        javascript implementation:
+        var opt1=document.getElementsByClassName("test2")
+        opt1[0].style.color="red";
+        opt1[0].setAttribute("id", "heading");
+    </pre>
+</div>
+<h1>Q7.	Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, 
+    the cards arrangement should be changed to vertical direction.</h1>
+<div class="main">
+    <div class="one"></div>
+    <div class="one"></div>
+    <div class="one"></div>
+
+
+</div>
+<button type="submit" onclick="changeflexdirection()">changeflexdirection</button>
+<div> 
+    <h2>
+        Q8.	What’s the difference between window vs document?
+    </h2>
+    <p>
+        Browser Object Model (BOM)
+The Browser Object Model contains objects that represent the current browser window or tab. 
+The topmost object in the BOM is the window object representing the window or tab or an 
+iframe sometimes. Window object has properties like browser history, 
+location and the device’s screen etc. In case of multi tab browser, a window object represents a single tab, but some of its properties like innerHeight, innerWidth and methods like resizeTo() will affect the whole browser window.
+
+Document Object Model
+When a web page is loaded, the browser creates a Document Object Model of the page. 
+The document object represents the whole html document as a tree of 
+Objects(HTML, HEAD, BODY, and other HTML tags). It is the root element that represents 
+the html document.
+    </p>
+</div>
+<div>
+    <h1>Q9	Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</h1>
+    <h2 id="time1"></h2>
+</div>
+<div>
+    <h2>Q10. 	"Guess the number Host link: 
+        </h2>
+    <a href="https://nagavasu45.github.io/finalrandom/">https://nagavasu45.github.io/finalrandom/</a>
+</div>
+<script src="./two.js"></script>
+</body>
+</html>
